@@ -19,6 +19,10 @@ Phalcon REST/MVC system
 
 * docker exec -it web composer install
 
+### Project local URL
+
+* http://localhost:8081/
+
 ### Stop project ###
 
 * docker-compose stop
