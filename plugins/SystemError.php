@@ -1,0 +1,42 @@
+<?php
+/**
+ * Copyright (c) 2020. Alex Samofalov <alexsamofalov86@gmail.com>
+ */
+
+namespace System\Plugins;
+
+use Phalcon\Events\Event;
+use Phalcon\Mvc\User\Plugin;
+use Phalcon\Dispatcher;
+use Phalcon\Mvc\Dispatcher\Exception as DispatcherException;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+
+class SystemError extends Plugin
+{
+    public function beforeException(Event $event, MvcDispatcher $dispatcher, \Exception $exception)
+    {
+        if ($exception instanceof DispatcherException) {
+            switch ($exception->getCode()) {
+                case Dispatcher::EXCEPTION_HANDLER_NOT_FOUND:
+                case Dispatcher::EXCEPTION_ACTION_NOT_FOUND:
+
+                $dispatcher->forward(
+                    [
+                        'controller' => 'error',
+                        'action' => 'error404'
+                    ]
+                );
+                return false;
+            }
+        }
+
+        $dispatcher->forward(
+            [
+                'controller' => 'error',
+                'action'     => 'error500'
+            ]
+        );
+
+        return false;
+    }
+}

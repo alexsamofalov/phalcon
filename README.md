@@ -21,7 +21,9 @@ Phalcon REST/MVC system
 
 ### Project local URL
 
-* http://localhost:8081/
+* API: http://localhost:8081/
+* MVC: http://localhost:8082/
+* Adminer: http://localhost:8083/
 
 ### Stop project ###
 
