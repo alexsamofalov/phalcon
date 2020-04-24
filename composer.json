@@ -1,0 +1,16 @@
+{
+    "name": "alexsamofalov/phalcon",
+    "description": "Phalcom RESTful API/MVC application",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Alex Samofalov",
+            "email": "alexsamofalov86@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
