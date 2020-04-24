@@ -1,8 +1,6 @@
-# README #
+# Phalcon REST/MVC system
 
-Phalcon REST/MVC system
-
-### Stack ###
+## Stack
 
 * PhalconPHP v3.4
 * MySQL 8
@@ -11,25 +9,25 @@ Phalcon REST/MVC system
 * Composer
 * Gulp
 
-### Run project ###
+## Run project
 
 * docker-compose up
 
-### Build project ###
+## Stop project
+
+* docker-compose stop
+
+## Build project
 
 * docker exec -it web composer install
 
-### Project local URL
+## Project local URL
 
 * API: http://localhost:8081/
 * MVC: http://localhost:8082/
 * Adminer: http://localhost:8083/
 
-### Stop project ###
-
-* docker-compose stop
-
-### Commands ###
+## Commands
 
 SSH into container
 * docker exec -it {containerName} /bin/bash
