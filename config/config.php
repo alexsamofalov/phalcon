@@ -5,6 +5,10 @@
 
 use Phalcon\Config;
 
+if (!defined('APP_PATH')) {
+    define('APP_PATH', __DIR__ . "/../");
+}
+
 // Application config
 return new Config([
     'timezone' => 'America/Los_Angeles',

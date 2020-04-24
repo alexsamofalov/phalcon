@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "vlucas/phpdotenv": "^4.1"
+        "vlucas/phpdotenv": "^4.1",
+        "phalcon/devtools": "3.4"
     }
 }

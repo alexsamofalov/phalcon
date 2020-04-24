@@ -1,0 +1,15 @@
+{
+  "migration" : {
+    "migrations": "migrations",
+    "config": "config/config.php"
+  },
+  "model" : {
+    "get-set" : true,
+    "namespace" : "System\\Models",
+    "extends" : "ModelAbstract",
+    "doc" : true,
+    "annotate" : true,
+    "force" : true,
+    "config" : "config/config.php"
+  }
+}
